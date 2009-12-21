@@ -8,6 +8,18 @@
     <name>fr.imag.adele.cadse.util</name>
     <version>2.3.0-SNAPSHOT</version>
     
+    <developers>
+    	<developer>
+    		<id>chomats</id>
+    		<name>Chomat</name>
+    		<email>Stephane.Chomat@imag.fr</email>
+    		<organization>ADELE/LIG/GRENOBLE</organization>
+    		<timezone>(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</timezone>
+    		<roles>
+    			<role></role>
+    		</roles>
+    	</developer>
+    </developers>
     <build>
         <finalName>${project.name}_${project.version}</finalName>
         <plugins>
