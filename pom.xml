@@ -7,44 +7,21 @@
     <artifactId>util</artifactId>
     <name>fr.imag.adele.cadse.util</name>
     <version>2.3.0-SNAPSHOT</version>
-    
-    <developers>
-    	<developer>
-    		<id>chomats</id>
-    		<name>Chomat</name>
-    		<email>Stephane.Chomat@imag.fr</email>
-    		<organization>ADELE/LIG/GRENOBLE</organization>
-    		<timezone>(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</timezone>
-    		<roles>
-    			<role></role>
-    		</roles>
-    	</developer>
-    </developers>
+    <parent>
+		<artifactId>fr.imag.adele.cadse.parent</artifactId>
+		<groupId>fr.imag.adele.cadse</groupId>
+		<version>2.3.0-SNAPSHOT</version>
+		<relativePath>../fr.imag.adele.cadse.parent</relativePath>
+	</parent>    
     <build>
-        <finalName>${project.name}_${project.version}</finalName>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
-                </configuration>
-            </plugin>
-
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
-                    <manifestLocation>META-INF</manifestLocation>
                     <instructions>
-                        <Bundle-Name>${pom.name}</Bundle-Name>
-                        <Bundle-Description>${pom.description}</Bundle-Description>
                         <Export-Package>fr.imag.adele.cadse.util</Export-Package>
-                        <Private-Package></Private-Package>
-                        <Import-Package>*</Import-Package>
-                       	<_removeheaders>Bnd-LastModified</_removeheaders>
                     </instructions>
                 </configuration>
             </plugin>
