@@ -37,12 +37,14 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
+                    <manifestLocation>META-INF</manifestLocation>
                     <instructions>
                         <Bundle-Name>${pom.name}</Bundle-Name>
                         <Bundle-Description>${pom.description}</Bundle-Description>
                         <Export-Package>fr.imag.adele.cadse.util</Export-Package>
                         <Private-Package></Private-Package>
                         <Import-Package>*</Import-Package>
+                       	<_removeheaders>Bnd-LastModified</_removeheaders>
                     </instructions>
                 </configuration>
             </plugin>
