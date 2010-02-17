@@ -346,7 +346,7 @@ public class ArraysUtil {
 			// the end of tmp (which is two elements
 			// shorter than the old list)
 			if (index < tmp.length) {
-				System.arraycopy(array, index + count, tmp, index, tmp.length - index + 1 - count);
+				System.arraycopy(array, index + count, tmp, index, tmp.length - index);
 			}
 
 			return tmp;
