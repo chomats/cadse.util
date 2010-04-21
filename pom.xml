@@ -21,7 +21,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package>fr.imag.adele.cadse.util</Export-Package>
+                        <Export-Package>fr.imag.adele.cadse.util;version="${version.cadse}</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>
